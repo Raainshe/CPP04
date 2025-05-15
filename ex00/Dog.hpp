@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/12 11:05:04 by rmakoni           #+#    #+#             */
-/*   Updated: 2025/05/15 13:16:10 by rmakoni          ###   ########.fr       */
+/*   Created: 2025/05/15 10:45:38 by rmakoni           #+#    #+#             */
+/*   Updated: 2025/05/15 13:13:53 by rmakoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef DOG_HPP
+#define DOG_HPP
 #include "Animal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
 
-int main()
+class Dog : public Animal
 {
-const Animal* meta = new Animal();
-const Animal* j = new Dog();
-const Animal* i = new Cat();
-std::cout << j->getType() << " " << std::endl;
-std::cout << i->getType() << " " << std::endl;
-i->makeSound(); //will output the cat sound!
-j->makeSound();
-meta->makeSound();
+    public:
+        Dog();
+        ~Dog();
+        void makeSound() const override;
+};
 
-return 0;
-}
+#endif

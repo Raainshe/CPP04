@@ -5,34 +5,38 @@
 #                                                     +:+ +:+         +:+      #
 #    By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/05/12 11:05:06 by rmakoni           #+#    #+#              #
-#    Updated: 2025/05/12 11:05:36 by rmakoni          ###   ########.fr        #
+#    Created: 2025/05/15 13:21:35 by rmakoni           #+#    #+#              #
+#    Updated: 2025/05/15 13:24:08 by rmakoni          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = fixed
+NAME = animal
 
-SRC =   main.cpp \
-                Fixed.cpp 
-
+SRC = 	main.cpp \
+	Cat.cpp \
+	Dog.cpp \
+	Animal.cpp \
+        WrongCat.cpp \
+        WrongAnimal.cpp
+        		
 OBJ = $(SRC:.cpp=.o)
 
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror 
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-        $(CXX)  $(CXXFLAGS)     $(OBJ)  -o      $(NAME)
+	$(CXX)	$(CXXFLAGS)	$(OBJ)	-o	$(NAME)
 
 %.o: %.cpp
-        $(CXX)  $(CXXFLAGS) -c $< -o $@
+	$(CXX)	$(CXXFLAGS) -c $< -o $@
 
 clean:
-        rm -f $(OBJ)
+	rm -f $(OBJ)
 
 fclean: clean
-        rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
 
