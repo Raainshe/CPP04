@@ -6,18 +6,18 @@
 #    By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/15 13:21:35 by rmakoni           #+#    #+#              #
-#    Updated: 2025/05/15 13:24:08 by rmakoni          ###   ########.fr        #
+#    Updated: 2025/07/14 15:21:31 by rmakoni          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = animal
 
 SRC = 	main.cpp \
-	Cat.cpp \
-	Dog.cpp \
-	Animal.cpp \
-        WrongCat.cpp \
-        WrongAnimal.cpp
+		Cat.cpp \
+		Dog.cpp \
+		Animal.cpp \
+		WrongCat.cpp \
+		WrongAnimal.cpp
         		
 OBJ = $(SRC:.cpp=.o)
 

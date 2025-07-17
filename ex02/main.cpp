@@ -6,7 +6,7 @@
 /*   By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 11:05:04 by rmakoni           #+#    #+#             */
-/*   Updated: 2025/05/15 13:16:10 by rmakoni          ###   ########.fr       */
+/*   Updated: 2025/07/16 18:14:16 by rmakoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,12 @@
 
 int main()
 {
-const Animal* meta = new Animal();
 const Animal* j = new Dog();
 const Animal* i = new Cat();
 std::cout << j->getType() << " " << std::endl;
 std::cout << i->getType() << " " << std::endl;
-i->makeSound(); //will output the cat sound!
+i->makeSound(); 
 j->makeSound();
-meta->makeSound();
 
 return 0;
 }
