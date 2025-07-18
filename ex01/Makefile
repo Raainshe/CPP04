@@ -6,7 +6,7 @@
 #    By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/15 13:21:35 by rmakoni           #+#    #+#              #
-#    Updated: 2025/07/10 13:53:49 by rmakoni          ###   ########.fr        #
+#    Updated: 2025/07/18 10:18:17 by rmakoni          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@ SRC = 	main.cpp \
 	Cat.cpp \
 	Dog.cpp \
 	Animal.cpp \
+	Brain.cpp \
 	WrongCat.cpp \
 	WrongAnimal.cpp
         		

@@ -6,7 +6,7 @@
 /*   By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 14:07:33 by rmakoni           #+#    #+#             */
-/*   Updated: 2025/05/15 14:08:01 by rmakoni          ###   ########.fr       */
+/*   Updated: 2025/07/18 10:16:55 by rmakoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ class Brain
 
     public:
         Brain();
+        Brain(const Brain& other);
+        Brain& operator=(const Brain& other);
         ~Brain();
 };
 #endif
