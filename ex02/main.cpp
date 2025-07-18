@@ -6,7 +6,7 @@
 /*   By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 11:05:04 by rmakoni           #+#    #+#             */
-/*   Updated: 2025/07/18 10:28:59 by rmakoni          ###   ########.fr       */
+/*   Updated: 2025/07/18 10:33:27 by rmakoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void testAbstractClass() {
     // This line would cause compilation error:
     // Animal animal; // Error: cannot instantiate abstract class
     
-    std::cout << "✓ Animal class is abstract and cannot be instantiated directly" << std::endl;
+    std::cout << "Animal class is abstract and cannot be instantiated directly" << std::endl;
     
     // But we can still use pointers to Animal for polymorphism
     const Animal* j = new Dog();
